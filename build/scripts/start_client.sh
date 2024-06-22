@@ -6,7 +6,8 @@ export TTOFF_LOGIN_TOKEN=${loginToken:="player1"}
 echo "Server IP (default: 127.0.0.1): "
 read -r gameServer
 export TTOFF_GAME_SERVER=${gameServer:="127.0.0.1"}
-while true do
+while true;
+do
  # launch the unix executable
  ./launch 
     sleep 5

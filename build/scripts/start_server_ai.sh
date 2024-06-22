@@ -1,7 +1,7 @@
 
 export SERVICE_TO_RUN=AI
 cd game
-while true 
+while true;
 do
     ./launch \
     --base-channel 401000000 \
@@ -10,7 +10,7 @@ do
     --astron-ip 127.0.0.1:7199 \
     --eventlogger-ip 127.0.0.1:7197 \
     --district-name "Toon Valley" \
-    config/common.prc ^
+    config/common.prc \
     config/production.prc
     sleep 5
 done

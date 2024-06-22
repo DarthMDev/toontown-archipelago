@@ -117,6 +117,8 @@ jobs:
         run: |
           mkdir release
           cp -r output/launch.dist release/game
+          # rename launch.bin to launch
+          mv release/game/launch.bin release/game/launch
 
       - name: Build & Copy Resources
         run: |
@@ -140,6 +142,7 @@ jobs:
       - name: Copy Astron
         run: |
            cp -r astron release/game
+           
 
       - name: Compress Release
         run: |

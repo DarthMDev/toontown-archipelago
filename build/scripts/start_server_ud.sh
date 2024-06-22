@@ -2,7 +2,7 @@
 export SERVICE_TO_RUN=UD
 cd game
 
-while true 
+while true;
 do 
     # launch the unix executable
     ./launch \ 

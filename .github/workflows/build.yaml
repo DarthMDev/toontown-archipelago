@@ -139,7 +139,7 @@ jobs:
 
       - name: Copy Astron
         run: |
-            Copy-Item -Path "astron" -Destination "release\game" -Recurse
+           cp -r astron release/game
 
       - name: Compress Release
         run: |

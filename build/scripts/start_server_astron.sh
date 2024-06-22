@@ -1,7 +1,7 @@
-cd game\astron
+cd game/astron
 
 while true;
 do
-    astrond --loglevel info config/astrond.yml
+    ./astrond --loglevel info config/astrond.yml
     sleep 5 
 done

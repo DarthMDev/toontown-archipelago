@@ -198,6 +198,7 @@ jobs:
             mv release/game/launch.bin release/game/launch      
       - name: Build & Copy Resources
         run: |
+            sudo apt-get install libassimp5 libavcodec58 libavformat58 libavutil56 libbullet3.06 libcg libcggl libegl1 libode8 libopenal1 libopusfile0 libsquish0 libswresample3 libswscale5 nvidia-cg-toolkit
             wget https://www.panda3d.org/download/panda3d-1.10.14/panda3d1.10_1.10.14~jammy_amd64.deb
             sudo dpkg -i panda3d1.10_1.10.14~jammy_amd64.deb
             mkdir release/game/resources

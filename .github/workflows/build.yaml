@@ -198,6 +198,8 @@ jobs:
             mv release/game/launch.bin release/game/launch      
       - name: Build & Copy Resources
         run: |
+            wget https://www.panda3d.org/download/panda3d-1.10.14/panda3d1.10_1.10.14~jammy_amd64.deb
+            sudo dpkg -i panda3d1.10_1.10.14~jammy_amd64.deb
             mkdir release/game/resources
             cd resources
             for dir in */; do multify -c -f "../release/game/resources/${dir%/}.mf" ${dir%/}; done

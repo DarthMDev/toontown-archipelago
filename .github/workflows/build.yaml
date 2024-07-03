@@ -119,6 +119,7 @@ jobs:
           cp -r output/launch.dist release/game
           # rename launch.bin to launch
           mv release/game/launch.bin release/game/launch
+          cp $pythonLocation/lib/python3.11/site-packages/panda3d/libpandaphysics.1.11.dylib release/game
 
       - name: Build & Copy Resources
         run: |
@@ -194,9 +195,7 @@ jobs:
             mkdir release
             cp -r output/launch.dist release/game
             # rename launch.bin to launch
-            mv release/game/launch.bin release/game/launch
-            cp $pythonLocation/lib/python3.11/site-packages/panda3d/libpandaphysics.1.11.so release/game
-      
+            mv release/game/launch.bin release/game/launch      
       - name: Build & Copy Resources
         run: |
             mkdir release/game/resources
